@@ -17,7 +17,7 @@ moves_sets = list(itertools.combinations(moves, 4))
 
 #moves_cmp=[]
 moves_cmp_idx=[]
-for j in range(10):
+for j in range(n_move):
     moves_cmp_idx.append([])
     for s in moves_sets:
         if moves[j] in s:
@@ -52,5 +52,3 @@ print_name=[moves_sets[i] for i in sort_idx]
 print("型:          使用率")
 for i in range(n_out):
   print(f"{print_name[i]}: {sorted_x[i]:.0%}")
-  #print(f'使用率(%):{sorted_x[]:.2%}')
-
